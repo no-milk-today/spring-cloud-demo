@@ -1,0 +1,35 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.4.4'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'ru.yandex'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+ext {
+	set('springCloudVersion', "2024.0.1")
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'		// Для включения веб-сервера
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'  // Для поддержки актутора
+	implementation 'org.springframework.cloud:spring-cloud-starter-config'  // Для взаимодействия с Config Server
+	implementation 'org.springframework.cloud:spring-cloud-starter-bus-amqp'// Для работы Spring Cloud Bus c RabbitMQ
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}

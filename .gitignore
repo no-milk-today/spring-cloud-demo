@@ -1,0 +1,33 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Gradle
+.gradle/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Other
+out/
+*.class
+
+# Windows-specific
+*.exe
+*.dll
+
+# Mac-specific
+*.DS_Store
+
+# Linux-specific
+*~
+
+# Exclude all build folders in submodules
+**/build/

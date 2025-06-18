@@ -1,4 +1,4 @@
-include 'spring-cloud-config-server'
-include 'spring-cloud-config-client'
+// include 'spring-cloud-config-server'
+// include 'spring-cloud-config-client'
 include 'spring-cloud-gateway'
 include 'exchange'

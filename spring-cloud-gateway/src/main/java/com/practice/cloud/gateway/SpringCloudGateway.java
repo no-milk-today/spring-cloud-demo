@@ -1,4 +1,4 @@
-package ru.yandex.spring_cloud_demo;
+package com.practice.cloud.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

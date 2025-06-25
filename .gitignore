@@ -5,7 +5,7 @@
 *.ipr
 
 # Gradle
-.gradle/
+**/.gradle/
 build/
 
 # OS-specific files
